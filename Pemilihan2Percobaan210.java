@@ -23,9 +23,10 @@ public class Pemilihan2Percobaan210 {
         qris = input10.nextLine();
         System.out.println("===========================");
 
-        if(qris.equalsIgnoreCase("y")){
+        if(qris.equals("y")){
+        // if(qris.equalsIgnoreCase("y")){
             System.out.println("mendapatkan potongan harga 1000");
-            if(member.equalsIgnoreCase("y")){
+            if(member.equals("y")){
                 diskon = 0.10;
                 System.out.println("besar diskon = 10%");
                 if (pilihan_menu == 1) {
@@ -46,7 +47,7 @@ public class Pemilihan2Percobaan210 {
                 System.out.println("total bayar setelah diskon:  "+ total_bayar);
                 total_bayar = total_bayar - 1000;
                 System.out.println("total bayar setelah diskon dan potongan 1000:  "+ total_bayar);
-            } else if(member.equalsIgnoreCase("n")){
+            } else if(member.equals("n")){
                 if (pilihan_menu == 1) {
                     harga = 14000;
                     System.out.println("harga ricebowl = " + harga);
@@ -66,9 +67,9 @@ public class Pemilihan2Percobaan210 {
             }else{
                 System.out.println("member tidak valid");
             }
-        }else if(qris.equalsIgnoreCase("n")){
+        }else if(qris.equals("n")){
             System.out.println("tidak menggunakan qris");
-            if(member.equalsIgnoreCase("y")){
+            if(member.equals("y")){
                 diskon = 0.10;
                 System.out.println("besar diskon = 10%");
                 if (pilihan_menu == 1) {
@@ -87,7 +88,7 @@ public class Pemilihan2Percobaan210 {
     
                 total_bayar = harga - (harga * diskon);
                 System.out.println("total bayar setelah diskon:  "+ total_bayar);
-            } else if(member.equalsIgnoreCase("n")){
+            } else if(member.equals("n")){
                 if (pilihan_menu == 1) {
                     harga = 14000;
                     System.out.println("harga ricebowl = " + harga);
